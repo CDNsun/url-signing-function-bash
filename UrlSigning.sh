@@ -68,7 +68,6 @@ then
 fi
 
 TK="$e""$p""$k""$i";
-echo $TK;
 T=`echo -n "$TK" | openssl md5 -binary | openssl base64 | tr +/ -_ | tr -d =`;
 URI="$s""://""$r""$p""?secure=""$T";
 
